@@ -9,3 +9,6 @@
 ## Что сделать не вышло и почему?
 
 ## Результаты работы
+
+![image info](./data/pred_res.png)
+![image info](./data/pred_ress.png)

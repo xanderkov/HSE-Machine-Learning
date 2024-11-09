@@ -1,7 +1,4 @@
-from fastapi import FastAPI
 from pydantic import BaseModel
-
-app = FastAPI()
 
 
 class Item(BaseModel):
@@ -22,13 +19,3 @@ class Item(BaseModel):
 
 class Items(BaseModel):
     objects: list[Item]
-
-
-@app.post("/predict_item")
-def predict_item(item: Item) -> float:
-    return ...
-
-
-@app.post("/predict_items")
-def predict_items(items: list[Item]) -> list[float]:
-    return ...
